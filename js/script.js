@@ -14,3 +14,9 @@ if(edad<18){
 console.log(nombre);
 console.log(edad);
 console.log(edades[0]);
+
+function saludar(){
+    console.log('hola estudiantes');
+}
+
+saludar();
