@@ -1,12 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script async src="./js/script.js"></script>
+    <title>Simulador de Préstamo</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>javascript</h1>
+    <div class="container">
+        <h1>Simulador de Préstamo Personal</h1>
+        <form id="loanForm">
+            <label for="amount">Monto del préstamo:</label>
+            <input type="number" id="amount" name="amount" required>
+
+            <label for="interest">Interés (%)</label>
+            <input type="number" id="interest" name="interest" required>
+
+            <label for="years">Plazo (años)</label>
+            <input type="number" id="years" name="years" required>
+
+            <button type="submit">Calcular</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>
